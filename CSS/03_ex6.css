@@ -1,0 +1,26 @@
+.container {
+    width: 500px;
+    height: 500px;
+    background-color: rgb(117, 88, 38);
+    }
+    .container > div {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    }
+    .item1 {
+    background-color: #9afaff;
+    z-index: 10;
+    }
+    .item2 {
+    background-color: #84ff8d;
+    top: 30px;
+    left: 30px;
+    }
+    .item3 {
+    background-color: #ffeb88;
+    top: 60px;
+    left: 60px;
+    z-index: 5;
+    }
+

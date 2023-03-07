@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>선택자1 : 기본 선택자</title>
+    <style>
+      /* 아이디 선택자 */
+      #green_i {
+        background-color: green;
+      }
+      /* 전체선택자 */
+      * {
+        color: skyblue;
+      }
+
+      /* 태그 선택자 */
+      li {
+        background-color: yellow;
+        color: blue;
+      }
+
+      /* 클래스 선택자 */
+      .red {
+        background-color: red;
+      }
+
+      .orange {
+        background-color: orange;
+      }
+
+      .green_c {
+        background-color: blue;
+      }
+
+      /* 선택자 우선순위
+        tag < class <id 
+        전체 선택자  : 우선 순위가 가장 낮아요 */
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li class="red">빨간색</li>
+      <li class="orange">주황색</li>
+      <li>클래스 지정 X</li>
+    </ul>
+
+    <h3>하늘색</h3>
+    <p id="green_i" class="green_c">초록색</p>
+  </body>
+</html>

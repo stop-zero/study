@@ -1,0 +1,25 @@
+.background-image1{
+    width: 800px;
+    height: 500px;
+    background-color: skyblue;
+    background-image: url(./img/lion.png);
+    background-position: center;
+    background-repeat: repeat-x;
+}
+.background-image2{
+    width: 800px;
+    height: 500px;
+    background-color: skyblue;
+    background-image: url(./img/lion.png);
+    margin-left: 100px;
+    margin-top: 30px;
+    background-size: contain;
+}
+.background-image3{
+    width: 800px;
+    height: 500px;
+    background-color: skyblue;
+    background-image: url(./img/lion.png);
+    background-size: cover;
+    background-position: top;
+}
