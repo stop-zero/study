@@ -181,7 +181,8 @@ console.log(Number(n3));
 console.log(parseInt(n3)); //123, 소수점은 버림/정수형
 
 // 실습
-// let mathScore = prompt("수학 점수를 입력하세요"); //77
-// let engScore = prompt("영어 점수를 입력하세요"); //88
-// let avg = (mathScore + engScore) / 2;
-console.log(Number(avg));
+let mathScore = prompt("수학 점수를 입력하세요"); //'77' ->77
+let engScore = prompt("영어 점수를 입력하세요"); //'88' -> 88
+
+let avg = (Number(mathScore) + Number(engScore)) / 2;
+console.log(avg);
