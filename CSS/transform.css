@@ -44,10 +44,11 @@ img:hover {
 .box {
   width: 100px;
   height: 100px;
-  display: inline;
+  /* display: inline; */
   background-color: black;
   transition-duration: 3s;
   transition: 1s 2s;
+  margin: 10px;
 }
 
 .box1:hover {

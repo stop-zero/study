@@ -26,6 +26,7 @@ div {
   left: 100px;
 }
 .position-absolute {
+  /* 부모 요소 기준 */
   background-color: coral;
   opacity: 0.6;
   position: absolute;
