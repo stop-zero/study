@@ -35,30 +35,30 @@ let opacity = 0.7;
 console.log(number);
 console.log(opacity);
 //NaN : not a number 숫자가 아니다
-console.log("apple" - 3);
+console.log("apple" - 3); //NaN
 
 //3. boolean
 let checked = true;
 let unchecked = false;
-console.log(checked);
-console.log(unchecked);
+console.log(checked); //true
+console.log(unchecked); //false
 
 //4. undefined
 let undef;
-console.log(undef);
+console.log(undef); //undefined
 
 //5. null
 let empty = null;
-console.log(empty);
+console.log(empty); //null
 
 //6. array
 let fruits = ["orange", "pineapple", "grape", "apple"];
 let fruits2 = new Array("orange", "pineapple", "grape", "apple");
 
-console.log(fruits[0], fruits[1]);
+console.log(fruits[0], fruits[1]); //orange pineapple
 
 let date = [1, "ji young", false, null, undefined];
-console.log(date[4]);
+console.log(date[4]); //undefined
 
 // array : 2차원 배열
 let korean = [
@@ -67,8 +67,8 @@ let korean = [
   ["사", "아", "자"],
 ];
 
-console.log(korean[0][0]);
-console.log(korean[1][1]);
+console.log(korean[0][0]); //0번째 줄 0번째 요소, 가
+console.log(korean[1][1]); //1번째 줄 1번째 요소, 마
 
 let letters = [
   ["사", "스", "자", "크"],
@@ -93,7 +93,7 @@ let nums = [
   ],
 ];
 
-console.log(nums[1][0][1]);
+console.log(nums[1][0][1]); //8
 
 //7. object key-value
 let cat = {
@@ -120,13 +120,20 @@ let introduce = {
   age: 23,
   study_now: true,
 };
+//점 표기법
+//object 이름.key이름
+console.log(introduce.name); //ji young
+// 대괄호 표기법
+// object 이름['']
+console.log(introduce["name"]);
 
 console.log(introduce);
 
 /* typeof 사용 */
-console.log(typeof "문자");
-console.log(typeof 123);
-console.log(typeof true);
+console.log(typeof "문자"); //string
+console.log(typeof 123); //number
+console.log(typeof true); //boolean
+// 변수가 아니여도 사용 가능
 console.log(typeof cat); //{}
 console.log(typeof []); //object
 console.log(typeof NaN); //number
@@ -151,14 +158,15 @@ console.log(
 
 // console.log(avg);
 
+console.log("------------");
 //1. -> 문자 string()
 let str1 = true;
 let str2 = 123;
 let str3 = null;
 
-console.log(typeof String(str1));
-console.log(typeof String(str2));
-console.log(typeof String(str3));
+console.log(typeof String(str1)); //string
+console.log(typeof String(str2)); //string
+console.log(typeof String(str3)); //string
 console.log(typeof str1); //boolean
 console.log(typeof str1.toString()); //string
 
