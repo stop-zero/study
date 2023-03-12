@@ -19,37 +19,37 @@ console.log(a / b);
 console.log(a % b);
 
 // 비교 연산자
-//동등한지 비교(===, ===)
+//동등한지 비교(==, ===)
 //== : 값만 비교
-console.log(1 == 1);
-console.log(1 == 2);
-console.log(1 != 2);
-console.log(1 != 1);
-console.log("1" == 1); //type 검사X
-console.log("1" != 1);
+console.log(1 == 1);    //true
+console.log(1 == 2);    //false
+console.log(1 != 2);    //true
+console.log(1 != 1);    //false
+console.log("1" == 1); //type 검사X, true
+console.log("1" != 1);  //false
 
-console.log("----------------------");
 // === : type과 값 모두 비교
-console.log(1 === 1);
-console.log(1 === 2);
-console.log(1 !== 2);
-console.log("1" === 1);
-console.log("1" !== 1);
+console.log(1 === 1);   //true
+console.log(1 === 2);   //false
+console.log(1 !== 2);   //true
+console.log("1" === 1); //false
+console.log("1" !== 1); //true
 
-//크기 비교
-// > < <= >=
-console.log(2 > 1);
-console.log(2 >= 2);
-console.log(2 < 1);
-console.log(2 <= 2);
+console.log("------------");
+
+//크기 비교 > < <= >=
+console.log(2 > 1); //true
+console.log(2 >= 2);    //true
+console.log(2 < 1); //false
+console.log(2 <= 2); //true
 
 console.log("------------");
 
 //논리연산자
-console.log(!true);
-console.log(!false);
-console.log(!!true);
-console.log(!!false);
+console.log(!true); //false
+console.log(!false);    //true
+console.log(!!true);    //true
+console.log(!!false);   //false
 
 console.log(true && true); //true
 console.log(true && false); //false

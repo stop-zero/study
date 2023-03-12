@@ -98,6 +98,8 @@ console.log(str1);
 let arr3 = [1, 3, 5, 4, 6];
 let alphabets = ["a", "b", "c", "d", "e"];
 
+console.log("for문");
+
 for (let i = 0; i < arr3.length; i++) {
   console.log(arr3[i]);
   //   console.log(alphabets[i]);
@@ -124,7 +126,7 @@ arr3.forEach(function (data) {
 });
 
 /* filter */
-console.log("----------");
+console.log("-filter-");
 arr3 = arr3.filter(function (num) {
   return num > 3;
 });
@@ -140,6 +142,7 @@ console.log(six);
 /* map, find */
 //map : 배열 내의 모든 원소에 대해 연산한 결과를 모아서 새로운 배열 반환
 //[1, 2, 3]
+console.log("-map-");
 let arr4 = [1, 2, 3].map(function (el) {
   return el * 3;
 });
@@ -206,3 +209,23 @@ let same2 = fruit1.filter((fruit) => fruit2.includes(fruit));
 let diff2 = fruit1.filter((fruit) => !fruit2.includes(fruit));
 console.log(same2);
 console.log(diff2);
+
+console.log("배열의 합");
+let numbers = [1, 2, 3];
+let sum4 = 0;
+let sum5 = 0;
+let sum6 = 0;
+
+for (let i = 0; i < numbers.length; i++) {
+  sum4 = sum4 + numbers[i];
+}
+
+for (let num of numbers) {
+  sum5 = sum5 + num;
+}
+
+numbers.forEach((num) => {
+  sum6 = sum6 + num;
+});
+
+console.log(sum4, sum5, sum6);

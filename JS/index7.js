@@ -65,12 +65,13 @@ console.log(sum2);
 // }
 
 // 구구단 만들어보기
-for (let i = 2; i < 10; i++) {
-  console.log(`${i}단`);
+for (let i = 1; i < 10; i++) {
+  console.log(`---${i}단---`);
   for (let j = 1; j < 10; j++) {
     console.log(`${i}x${j}=${i * j}`);
   }
 }
+
 /* 2. while */
 let n2 = 1;
 while (n2 <= 5) {
@@ -111,3 +112,34 @@ for (let i = 0; i < 10; i++) {
   sum3 += i;
 }
 console.log(sum3);
+
+//while 구구단
+/* let i =1; j=i;
+while(i<10){
+  console.log(`---${i}단---`);
+  while(j<10){
+    console.log(i+ "x" + j + "=" + i*j);
+    j++
+  }
+  i++;
+  j=1;
+
+} */
+
+for(let i = 1; i<10; i++){
+  if(i==6){
+    console.log('1부터 5까지만');
+    break;
+  }
+  console.log(i);
+}
+
+//continue
+let sum7 = 0;
+for(let i = 0; i<100; i++) {
+  if(i%2== 0){
+    continue;
+  }
+  sum7+=i;
+}
+console.log(sum7);
